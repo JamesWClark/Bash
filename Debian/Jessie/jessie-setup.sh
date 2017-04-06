@@ -15,7 +15,7 @@ fi
 DOMAIN = domain.com
 EMAIL = email@email.com
 GIT_EMAIL = $EMAIL
-GIT_NAME = "John Doe"
+GIT_NAME = ""
 
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -25,7 +25,7 @@ sudo apt-get install git -y
 git config --global user.email $GIT_EMAIL
 git config --global user.name $GIT_NAME
 
-git https://github.com/JamesWClark/TC.git
+git clone https://github.com/JamesWClark/TC.git
 mkdir TC/bin
 
 ###
