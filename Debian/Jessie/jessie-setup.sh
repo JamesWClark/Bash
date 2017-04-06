@@ -90,6 +90,12 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-p
 # persist the IP tables
 sudo netfilter-persistent save
 
+# TODO
+# run node as service
+# http://stackoverflow.com/a/28542093/1161948
+
+
+
 # Notes
 # How To Secure Apache with Let's Encrypt on Debian 8
 # https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-debian-8
