@@ -68,11 +68,11 @@ def get_ip_address(ifname):
 # example code
 if __name__=="__main__":
     hostname = socket.gethostname()
-    wlan0_ipaddr = get_ip_address('wlan0')
-#    setText('IP:\n%s' % (wlan0_ipaddr))
-    setText('%s\n%s' % (hostname, wlan0_ipaddr))
+    ipaddr = None
+    try:
+        ipaddr = get_ip_address('wlan0')
+    except IOError:
+        ipaddr = get_ip_address('eth0')
+    setText('%s\n%s' % (hostname, ipaddr))
     setRGB(0,128,64)
-    #for c in range(0,255):
-    #    setRGB(c,255-c,0)
-    #    time.sleep(0.01)
-    #setRGB(0,255,0)
+    
