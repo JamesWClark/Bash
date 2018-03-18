@@ -1,8 +1,6 @@
 # GrovePi + Grove - LCD RGB Backlight
 # uses http://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight
 # diplays IP address to LCD RGB Backlight
-# @dsoukup Deanna Soukup
-
 
 import time,sys
 import RPi.GPIO as GPIO
